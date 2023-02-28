@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-input{
+.inp{
   width: 30vw;
   padding: 10px;
   margin: 10px;
@@ -29,4 +29,18 @@ span{
   cursor: pointer;
   border: 1px solid gray;
   background-color: azure;
+}
+.star {
+  visibility:hidden;
+  font-size:20px;
+  cursor:pointer;
+}
+.star:before {
+ content: "\2605";
+ position: absolute;
+ visibility:visible;
+}
+.star:checked:before {
+ content: "\2606";
+ position: absolute;
 }
